@@ -12,3 +12,15 @@ Credit to Jenny Bryan for the original data and cleaning work:
 - `CalaverasData.xls` — raw data
 - `import.R` — imports and cleans the data, generates a `frog_id` per jump series
 - `frogs.parquet` — cleaned data in parquet format
+- `paper.md` — markdown version of the paper below
+
+## Citation
+
+The data come from this **open access** paper (freely available from the publisher):
+
+> Astley, H. C., Abbott, E. M., Azizi, E., Marsh, R. L. and Roberts, T. J. (2013).
+> Chasing maximal performance: a cautionary tale from the celebrated jumping
+> frogs of Calaveras County. *Journal of Experimental Biology* 216, 3947–3953.
+> <https://doi.org/10.1242/jeb.090357>
+
+See [paper.md](paper.md) for a markdown version.
