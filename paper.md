@@ -17,7 +17,7 @@ The Calaveras County Frog Jumping Jubilee, a contest inspired by the Mark Twain 
 
 ### Data collection
 
-Frog jumps of the 84th annual Calaveras County Jumping Frog Jubilee were recorded with a Sony HDR-FX1 camcorder at 30 frames s<sup>−1</sup> (60 fields s<sup>−1</sup>) and 1440×1080 pixel resolution from a fixed position in the seating stands. Video files were de-interlaced prior to digitizing. All frogs were bullfrogs \[*R. catesbeiana* (Shaw 1802)\]. Contestants placed their frog on a standard starting location and induced them to jump three times in succession in order to achieve the maximum straight-line distance from the starting point. Contestants motivated the frogs by yelling, touching the frog, blowing on it, lunging towards it, or combinations thereof, although contact with the frog is forbidden after the first jump. Although only three jumps were required, some frogs jumped additional times, and these jumps were also included in our analysis. At the beginning and end of each day filming, a brief clip was recorded of a calibration grid placed on the stage consisting of six 148 cm squares, which were then digitized using a MATLAB digitizing script (Hedrick, 2008). These data were used to create a perspective transformation that was applied to digitized coordinates from jump videos. The locations of the frog's body at the first perceptible jump movement and first body–ground contact were digitized for each jump in the sequence and perspective transformed in MATLAB, and distances and jump durations were computed from transformed data. In several instances, the frog performed a rapid series of short, shallow jumps in which forward velocity was maintained during ground contact, similar to the ‘skittering’ behavior some species use to move across the surface of the water (Gans, 1976; Herrmann, 2006). Because these ‘skitters’ violated key assumptions underlying performance limits in frog jumping, such as that all energy from each jump is generated *de novo*, they were excluded from the data set. To assess accuracy, at the end of each day we filmed a tape measure locked at 213 cm as it was placed in seven locations around the stage at various angles to the camera. Subsequent digitizing and transformation of tape measures showed no consistent bias in distance with a 95% confidence interval of 1.6 cm.
+Frog jumps of the 84th annual Calaveras County Jumping Frog Jubilee were recorded with a Sony HDR-FX1 camcorder at 30 frames $$\mathrm{s}^{-1}$$ (60 fields $$\mathrm{s}^{-1}$$) and 1440×1080 pixel resolution from a fixed position in the seating stands. Video files were de-interlaced prior to digitizing. All frogs were bullfrogs \[*R. catesbeiana* (Shaw 1802)\]. Contestants placed their frog on a standard starting location and induced them to jump three times in succession in order to achieve the maximum straight-line distance from the starting point. Contestants motivated the frogs by yelling, touching the frog, blowing on it, lunging towards it, or combinations thereof, although contact with the frog is forbidden after the first jump. Although only three jumps were required, some frogs jumped additional times, and these jumps were also included in our analysis. At the beginning and end of each day filming, a brief clip was recorded of a calibration grid placed on the stage consisting of six 148 cm squares, which were then digitized using a MATLAB digitizing script (Hedrick, 2008). These data were used to create a perspective transformation that was applied to digitized coordinates from jump videos. The locations of the frog's body at the first perceptible jump movement and first body–ground contact were digitized for each jump in the sequence and perspective transformed in MATLAB, and distances and jump durations were computed from transformed data. In several instances, the frog performed a rapid series of short, shallow jumps in which forward velocity was maintained during ground contact, similar to the ‘skittering’ behavior some species use to move across the surface of the water (Gans, 1976; Herrmann, 2006). Because these ‘skitters’ violated key assumptions underlying performance limits in frog jumping, such as that all energy from each jump is generated *de novo*, they were excluded from the data set. To assess accuracy, at the end of each day we filmed a tape measure locked at 213 cm as it was placed in seven locations around the stage at various angles to the camera. Subsequent digitizing and transformation of tape measures showed no consistent bias in distance with a 95% confidence interval of 1.6 cm.
 
 ### Rental frogs *versus* professionally jumped frogs
 
@@ -25,7 +25,7 @@ Frogs were categorized into two discrete groups. The first group consisted of �
 
 ### Derived performance variables
 
-Video measurements allowed the direct determination of total jump distance (*D*<sub>jump</sub>) and total jump duration (*T*<sub>j</sub>), and from these variables we calculated the angle (θ) and takeoff velocity (*V*<sub>t</sub>) of each jump using ballistic formulae. While a given jump distance can be achieved *via* many combinations of takeoff velocity and angle, each of these combinations will result in a different jump duration, only one of which will match our observed jump duration.
+Video measurements allowed the direct determination of total jump distance ($$D_{\mathrm{jump}}$$) and total jump duration ($$T_{\mathrm{j}}$$), and from these variables we calculated the angle (θ) and takeoff velocity ($$V_{\mathrm{t}}$$) of each jump using ballistic formulae. While a given jump distance can be achieved *via* many combinations of takeoff velocity and angle, each of these combinations will result in a different jump duration, only one of which will match our observed jump duration.
 
 Equations were based on Marsh (Marsh, 1994) and simplifications in Peplowski and Marsh (Peplowski and Marsh, 1997). As in Marsh (Marsh, 1994), we divided the jump into three periods: takeoff (from the start of motion until takeoff), aerial (ballistic motion from takeoff until the center of mass descended to the level at takeoff) and descending (from center of mass reaching takeoff height until ground contact). Takeoff duration was: 
 
@@ -33,13 +33,13 @@ $$
 T_{\mathrm{t}} = \frac{2L_{\mathrm{cm}}}{V_{\mathrm{t}}} \tag{1}
 $$
 
- where *L*<sub>cm</sub> is the distance from the distal toe tip to the center of mass with legs fully extended and *V*<sub>t</sub> is takeoff velocity (Marsh, 1994). Aerial duration was: 
+ where $$L_{\mathrm{cm}}$$ is the distance from the distal toe tip to the center of mass with legs fully extended and $$V_{\mathrm{t}}$$ is takeoff velocity (Marsh, 1994). Aerial duration was: 
 
 $$
 T_{\mathrm{a}} = \frac{2V_{\mathrm{t}}\sin\theta}{g} \tag{2}
 $$
 
- where ***g*** is the acceleration due to gravity and θ is the takeoff angle. Descending duration was approximated as: 
+ where $$g$$ is the acceleration due to gravity and θ is the takeoff angle. Descending duration was approximated as: 
 
 $$
 T_{\mathrm{d}} = \frac{L_{\mathrm{cm}}}{V_{\mathrm{t}}} \tag{3}
@@ -57,7 +57,7 @@ $$
 T_{\mathrm{j}} = \frac{D_{\mathrm{jump}} + L_{\mathrm{cm}}\cos\theta}{V_{\mathrm{t}}\cos\theta} \tag{5}
 $$
 
- where *D*<sub>jump</sub> is total jump distance, which can be re-arranged to: 
+ where $$D_{\mathrm{jump}}$$ is total jump distance, which can be re-arranged to: 
 
 $$
 V_{\mathrm{t}} = \frac{D_{\mathrm{jump}} + L_{\mathrm{cm}}\cos\theta}{T_{\mathrm{j}}\cos\theta} \tag{6}
@@ -69,7 +69,7 @@ $$
 T_{\mathrm{j}} = \frac{3T_{\mathrm{j}}L_{\mathrm{cm}}\cos\theta}{D_{\mathrm{jump}} + L_{\mathrm{cm}}\cos\theta} + \frac{2(D_{\mathrm{jump}} + L_{\mathrm{cm}}\cos\theta)\sin\theta}{T_{\mathrm{j}}g\cos\theta} \tag{7}
 $$
 
- allowing calculation of an estimated *T*<sub>j</sub> for a given angle based on actual *T*<sub>j</sub>, jump distance and *L*<sub>cm</sub>. These estimated *T*<sub>j</sub> values for a variety of angles are then compared with measured *T*<sub>j</sub>. Once the angle is known, *V*<sub>t</sub> can be calculated *via* Eqn 6. Jumps with a distance of less than three times the length from the toe to the center of mass (*L*<sub>cm</sub>) or with jump durations of less than 0.4 s were excluded from this analysis because of large error relative to small values.
+ allowing calculation of an estimated $$T_{\mathrm{j}}$$ for a given angle based on actual $$T_{\mathrm{j}}$$, jump distance and $$L_{\mathrm{cm}}$$. These estimated $$T_{\mathrm{j}}$$ values for a variety of angles are then compared with measured $$T_{\mathrm{j}}$$. Once the angle is known, $$V_{\mathrm{t}}$$ can be calculated *via* Eqn 6. Jumps with a distance of less than three times the length from the toe to the center of mass ($$L_{\mathrm{cm}}$$) or with jump durations of less than 0.4 s were excluded from this analysis because of large error relative to small values.
 
 Once takeoff velocity and angle have been calculated, we can calculate the potential and kinetic energy: 
 
@@ -83,7 +83,7 @@ $$
 E_{\mathrm{K}} = 0.5M_{\mathrm{b}}V_{\mathrm{t}}^{2} \tag{9}
 $$
 
- where *M*<sub>b</sub> is body mass. In our analysis, energies were expressed in body-mass-specific terms, eliminating the need to measure the mass of each frog jumped: 
+ where $$M_{\mathrm{b}}$$ is body mass. In our analysis, energies were expressed in body-mass-specific terms, eliminating the need to measure the mass of each frog jumped: 
 
 $$
 \frac{E_{\mathrm{P}}}{M_{\mathrm{b}}} = gL_{\mathrm{cm}}\sin\theta \tag{10}
@@ -101,7 +101,7 @@ $$
 W_{\mathrm{m}} = \frac{gL_{\mathrm{cm}}\sin\theta + 0.5V_{\mathrm{t}}^{2}}{M_{\mathrm{m}}} \tag{12}
 $$
 
- where *M*<sub>m</sub> is the proportion of muscle mass to body mass, assumed to be 24% of the total frog body mass based on prior measurements (Marsh, 1994). Average power per unit muscle mass was Eqn 12 divided by Eqn 1: 
+ where $$M_{\mathrm{m}}$$ is the proportion of muscle mass to body mass, assumed to be 24% of the total frog body mass based on prior measurements (Marsh, 1994). Average power per unit muscle mass was Eqn 12 divided by Eqn 1: 
 
 $$
 P_{\mathrm{m}} = \frac{gL_{\mathrm{cm}}\sin\theta + 0.5V_{\mathrm{t}}^{2}}{M_{\mathrm{m}}}\frac{V_{\mathrm{t}}}{2L_{\mathrm{cm}}} \tag{13}
