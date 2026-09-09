@@ -12,7 +12,7 @@ Credit to Jenny Bryan for the original data and cleaning work:
 - `CalaverasData.xls` — raw data
 - `import.R` — imports and cleans the data, generates a `frog_id` per jump series
 - `frogs.parquet` — cleaned data in parquet format
-- `paper.md` — markdown version of the paper below
+- `data-collection.md` — data collection sections of the paper below, as markdown
 
 ## Citation
 
@@ -23,4 +23,4 @@ The data come from this **open access** paper (freely available from the publish
 > frogs of Calaveras County. *Journal of Experimental Biology* 216, 3947–3953.
 > <https://doi.org/10.1242/jeb.090357>
 
-See [paper.md](paper.md) for a markdown version.
+See [data-collection.md](data-collection.md) for a markdown version of the data collection sections.
