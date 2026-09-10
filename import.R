@@ -14,12 +14,12 @@ frogs <- frogs |>
     distance_3 = `3-jump dist`,
     distance_3_off = `measured 3-jump`,
     duration = `jump duration`,
-    angle_00 = ...10,
-    angle_01 = angle,
-    angle_10 = ...11,
-    velocity_00 = ...13,
-    velocity_01 = Vel,
-    velocity_10 = ...14
+    angle = angle,
+    angle_lower = ...10,
+    angle_upper = ...11,
+    velocity = Vel,
+    velocity_lower = ...13,
+    velocity_upper = ...14
   ) |>
   mutate(
     jump_n = as.integer(jump_n),
@@ -27,7 +27,7 @@ frogs <- frogs |>
       frog_type == 1 ~ "rental",
       frog_type == 2 ~ "individual",
       frog_type == 3 ~ "pro",
-      frog_type < 0 ~ "unknown"
+      frog_type < 0 ~ NA
     )
   ) |>
   mutate(row = row_number(), .before = 1)
